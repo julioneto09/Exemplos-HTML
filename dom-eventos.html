@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Página para Exercícios HTML | Gama Academy</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Texto descritivo da página web" />
+    <meta name="author" content="Gama Academy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header role="banner">
+      <nav role="navigation" aria-level="main navigation">
+        <ul role="menu">
+          <li>
+            <a href="#" role="menuitem">Home</a>
+          </li>
+          <li>
+            <a href="#" role="menuitem">Quem somos</a>
+          </li>
+          <li>
+            <a href="#" role="menuitem">Contatos</a>
+          </li>
+          <li>
+            <a href="#" role="menuitem">Conteúdos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <p id="texto">
+        Baby Yoda é um membro pequeno da mesma especie alienigena sem nome dos
+        personagens de Star Wars Yoda e Yaddle, com que ele compartilha uma
+        forte habilidade na Força.
+      </p>
+
+      <script type="text/javascript">
+        function atualizar() {
+          var texto1 = document.getElementById("texto");
+
+          texto1.innerText = "mudou o texto";
+        }
+      </script>
+
+      <button id="botao" onclick="atualizar()">Atualização do texto</button>
+    </main>
+
+    <footer role="contentinfo">&copy;Gama 2021</footer>
+  </body>
+</html>
